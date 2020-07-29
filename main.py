@@ -1,6 +1,5 @@
 import pygame
 import os
-import sys
 img_path = os.path.join('player.png')
 
 class character(object):
@@ -46,7 +45,6 @@ while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
      pygame.quit()
-     sys.exit()
      running = False
  
   screen.fill((255,255,255))
